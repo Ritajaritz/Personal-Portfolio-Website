@@ -1,0 +1,312 @@
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+      }
+
+      ul.show {
+        display: flex;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      .menu-btn {
+        display: block;
+        
+      }
+      .row .col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .social-icons {
+        flex-direction: row;
+        height: auto;
+      }
+
+      .social-icons a {
+        margin: 10px 0;
+      }
+}
+@media (min-width: 769px) {
+    ul {
+      display: flex !important;
+      /* Use !important to override the display: none; in smaller screens */
+    }
+
+    .menu-btn {
+      display: none;
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar a.sticky {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    text-align: center;
+    margin: 5vh 0;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* Adjust the header text for smaller screens */
+@media (max-width: 768px) {
+  .header-text {
+    margin-top: 8%;
+    font-size: 3vh;
+  }
+}
+
+/* Make the social icons responsive */
+@media (max-width: 768px) {
+  .social-icons {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    gap: 1vh;
+  }
+  .social-icons a {
+    width: 6vh;
+    height: 6vh;
+  }
+}
+
+/* Adjust the workex section for smaller screens */
+@media (max-width: 768px) {
+  main.row {
+    display: flex;
+    flex-direction: column;
+  }
+  .worktitle {
+    margin-top: 10%;
+    font-size: 3vh;
+  }
+  .col .contents {
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+}
+
+/* Make the projects section responsive */
+@media (max-width: 768px) {
+  .projects {
+    height: auto;
+  }
+}
+
+/* Adjust the education section for smaller screens */
+@media (max-width: 768px) {
+  .education .worktitle {
+    margin-top: 5%;
+    font-size: 3vh;
+  }
+}
+
+/* Make the skills section responsive */
+@media (max-width: 768px) {
+  .skills {
+    height: auto;
+  }
+  .srow img,
+  .srow i {
+    margin: 2vh;
+  }
+}
+
+/* Adjust the achievements section for smaller screens */
+@media (max-width: 768px) {
+  .ach .worktitle {
+    margin-top: 5%;
+    font-size: 3vh;
+  }
+}
+
+/* Make the contact section responsive */
+@media (max-width: 768px) {
+  .contact .worktitle {
+    margin-top: 5%;
+    font-size: 3vh;
+  }
+  .info h1 {
+    font-size: 3.2vh;
+  }
+  .info a {
+    font-size: 4vh;
+  }
+  .contact .social-icons {
+    margin-right: 2vh;
+  }
+}
+/* Make the code section responsive */
+@media (max-width: 768px) {
+  .code main.row {
+    grid-template-columns: 1fr;
+  }
+  .python,
+  .java,
+  .c,
+  .html,
+  .css,
+  .js {
+    margin: 2vh;
+  }
+  .fill {
+    height: 100%;
+  }
+  .python .fill,
+  .java .fill,
+  .c .fill {
+    width: 70%;
+  }
+  .html .fill,
+  .css .fill {
+    width: 60%;
+  }
+  .js .fill {
+    width: 40%;
+  }
+}
+
+/* Adjust the achievements section for smaller screens */
+@media (max-width: 768px) {
+  .ach main.row {
+    grid-template-columns: 1fr;
+  }
+  .outter {
+    flex-direction: column;
+  }
+  .dabba {
+    width: 90%;
+    height: auto;
+  }
+  .cert {
+    margin-top: 2vh;
+  }
+}
+
+/* Make the contact section responsive */
+@media (max-width: 768px) {
+  .contact .worktitle {
+    margin-top: 5%;
+    font-size: 3vh;
+  }
+  .info h1 {
+    font-size: 3.2vh;
+  }
+  .info a {
+    font-size: 4vh;
+  }
+  .contact .social-icons {
+    margin-right: 2vh;
+  }
+}
+/* Make the projects section responsive */
+@media (max-width: 768px) {
+  .projects {
+    height: auto;
+  }
+}
+
+/* Adjust the education section for smaller screens */
+@media (max-width: 768px) {
+  .education main.row {
+    grid-template-columns: 1fr;
+  }
+  .education .worktitle {
+    margin-top: 5%;
+    font-size: 3vh;
+  }
+}
+
+/* Make the skills section responsive */
+@media (max-width: 768px) {
+  .skills {
+    height: auto;
+  }
+  .skills main.row {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills .worktitle {
+    margin-top: 5%;
+  }
+  .code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .srow img,
+  .srow i {
+    margin: 2vh;
+  }
+}
+
+/* Adjust the achievements section for smaller screens */
+@media (max-width: 768px) {
+  .ach main.row {
+    grid-template-columns: 1fr;
+  }
+  .ach .worktitle {
+    margin-top: 5%;
+    font-size: 3vh;
+  }
+  .outter {
+    flex-direction: column;
+  }
+  .dabba {
+    width: 90%;
+    height: auto;
+  }
+  .cert {
+    margin-top: 2vh;
+  }
+}
+
+/* Make the contact section responsive */
+@media (max-width: 768px) {
+  .contact .worktitle {
+    margin-top: 5%;
+    font-size: 3vh;
+  }
+  .info h1 {
+    font-size: 3.2vh;
+  }
+  .info a {
+    font-size: 4vh;
+  }
+  .contact .social-icons {
+    margin-right: 2vh;
+  }
+}
